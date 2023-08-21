@@ -82,7 +82,7 @@ a:active { /* selected link */
 
 .button:hover,
 a:focus {
-  color: #393939;
+  color: #fff;
   background-color: #ee3897;
   font-weight: 700;
   text-decoration: none;
