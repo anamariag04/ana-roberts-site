@@ -9,19 +9,18 @@ Hyperlink (grey): #393939
 */
 
 body {
-  background-color:#fffcfc;
+  background-color: #fffcfc;
   font-family: 'Didact Gothic', sans-serif;
-  font-weight: 400
-  color #000000;
+  font-weight: 400;
+  color: #000;
   line-height: 1.5;
 }
 
 header {
-  background-color:#faeaf5;
+  background-color: #faeaf5;
   font-weight: bold;
   font-size: 30;
 }
-
 
 h1 {
   font-size: em;
@@ -37,6 +36,7 @@ h3 {
   font-size: 1.75em;
   font-weight: bold;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: bold;
@@ -50,70 +50,86 @@ a {
   color: #393939;
   text-decoration: none; /* No underlining */
 }
+
 a:visited { /* visited link */
   color: #393939;
 }
-a:hover, a:focus {
-  color: #EE3897;
+
+a:hover,
+a:focus {
+  color: #ee3897;
   font-weight: 700;
   text-decoration: underline;
 }
+
 a:active { /* selected link */
   color: #630051;
 }
 
 .button {
-  display: inline-block; 
+  display: inline-block;
   background-color: #c9c9c9;
-  color: #ffffff; 
+  color: #393939;
   font-weight: 400;
   padding: 13px;
   border-radius: 18px;
   transition: 0.2s opacity;
 }
-.button:visited { 
+
+.button:visited {
   color: #393939;
 }
-.button:hover, a:focus {
+
+.button:hover,
+a:focus {
   color: #393939;
-  background-color: #EE3897;
+  background-color: #ee3897;
   font-weight: 700;
   text-decoration: none;
 }
-.button:active { 
+
+.button:active {
   color: #630051;
 }
 
-  .button.all-in-one {
-    background-color:  #7307d2;
-    color: #ffffff;
-  }
-  .button.all-in-one:visited { 
-    background-color:  #4b038a;
-    color: #ffffff;
-  }
-  .button.all-in-one:hover, a:focus {
-    color: #ffffff;
-    background-color: #038a64; 
-    text-decoration: none;
-  }
-  .button.all-in-one:active { 
-    color: #038a64;
-  }
+.button.all-in-one {
+  background-color: #7307d2;
+  color: #fff;
+}
 
-  .button.vocapp {
-    background-color:  #0011cb;
-    color: #ffffff;
-  }
-  .button.vocapp:visited { 
-    background-color:  #00006a;
-    color: #ffffff;
-  }
-  .button.vocapp:hover, a:focus {
-    color: #ffffff;
-    background-color: #038a64;
-    text-decoration: none;
-  }
-  .button.vocapp:active { 
-    color: #038a64;
-  }
+.button.all-in-one:visited {
+  background-color: #4b038a;
+  color: #fff;
+}
+
+.button.all-in-one:hover,
+a:focus {
+  color: #fff;
+  background-color: #038a64;
+  text-decoration: none;
+}
+
+.button.all-in-one:active {
+  color: #038a64;
+}
+
+.button.vocapp {
+  background-color: #0011cb;
+  color: #fff;
+}
+
+.button.vocapp:visited {
+  background-color: #00006a;
+  color: #fff;
+}
+
+.button.vocapp:hover,
+a:focus {
+  color: #fff;
+  background-color: #038a64;
+  text-decoration: none;
+}
+
+.button.vocapp:active {
+  color: #038a64;
+}
