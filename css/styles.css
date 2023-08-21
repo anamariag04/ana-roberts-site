@@ -5,37 +5,115 @@ Secondary Color (lightpink): #faeaf5;
 Tertiary Color (lightgrey): #DDDDDD;
 Quaternary Color (bpink); #EE3897;
 Quinary Color (black): #000000;
+Hyperlink (grey): #393939
 */
 
 body {
-    background-color: #FFFCFC;
-    font-family: 'Didact Gothic', sans-serif;
-    font-weight: 400
-    color #000000 ;
-    line-height: 1.5;
-  }
-
-header {
-    background-color:#faeaf5;
-    font-weight: bold;
-    font-size: 30;
+  background-color:#fffcfc;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 400
+  color #000000;
+  line-height: 1.5;
 }
 
+header {
+  background-color:#faeaf5;
+  font-weight: bold;
+  font-size: 30;
+}
+
+
 h1 {
-    font-size: 3em;
-    font-weight: 700;
+  font-size: em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #393939;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #393939;
+}
+a:hover, a:focus {
+  color: #EE3897;
+  font-weight: 700;
+  text-decoration: underline;
+}
+a:active { /* selected link */
+  color: #630051;
+}
+
+.button {
+  display: inline-block; 
+  background-color: #c9c9c9;
+  color: #ffffff; 
+  font-weight: 400;
+  padding: 13px;
+  border-radius: 18px;
+  transition: 0.2s opacity;
+}
+.button:visited { 
+  color: #393939;
+}
+.button:hover, a:focus {
+  color: #393939;
+  background-color: #EE3897;
+  font-weight: 700;
+  text-decoration: none;
+}
+.button:active { 
+  color: #630051;
+}
+
+  .button.all-in-one {
+    background-color:  #7307d2;
+    color: #ffffff;
   }
-  
-  h2 {
-    font-size: 2.5em;
-    font-weight: 700;
+  .button.all-in-one:visited { 
+    background-color:  #4b038a;
+    color: #ffffff;
   }
-  
-  h3 {
-    font-size: 1.75em;
-    font-weight: bold;
+  .button.all-in-one:hover, a:focus {
+    color: #ffffff;
+    background-color: #038a64; 
+    text-decoration: none;
   }
-  h4 {
-    font-size: 1.35em;
-    font-weight: bold;
+  .button.all-in-one:active { 
+    color: #038a64;
+  }
+
+  .button.vocapp {
+    background-color:  #0011cb;
+    color: #ffffff;
+  }
+  .button.vocapp:visited { 
+    background-color:  #00006a;
+    color: #ffffff;
+  }
+  .button.vocapp:hover, a:focus {
+    color: #ffffff;
+    background-color: #038a64;
+    text-decoration: none;
+  }
+  .button.vocapp:active { 
+    color: #038a64;
   }
