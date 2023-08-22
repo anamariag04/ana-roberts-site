@@ -12,6 +12,7 @@ body {
   background-color: #fffcfc;
   font-family: 'Didact Gothic', sans-serif;
   font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
   font-weight: 400;
   color: #000;
   line-height: 1.5;
@@ -19,28 +20,26 @@ body {
 
 header {
   background-color: #faeaf5;
-  font-weight: bold;
-  font-size: 30;
 }
 
 h1 {
-  font-size: em;
-  font-weight: 700;
+  font-size: 2.75em;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h4 {
   font-size: 1.35em;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 img {
@@ -59,7 +58,6 @@ a:visited { /* visited link */
 a:hover,
 a:focus {
   color: #ee3897;
-  font-weight: 700;
   text-decoration: underline;
 }
 
@@ -71,7 +69,6 @@ a:active { /* selected link */
   display: inline-block;
   background-color: #c9c9c9;
   color: #393939;
-  font-weight: 400;
   padding: 13px;
   border-radius: 18px;
   transition: 0.2s opacity;
@@ -82,10 +79,9 @@ a:active { /* selected link */
 }
 
 .button:hover,
-a:focus {
+.button:focus {
   color: #fff;
   background-color: #ee3897;
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -104,7 +100,7 @@ a:focus {
 }
 
 .button.all-in-one:hover,
-a:focus {
+.button.all-in-one:focus {
   color: #fff;
   background-color: #038a64;
   text-decoration: none;
@@ -125,7 +121,7 @@ a:focus {
 }
 
 .button.vocapp:hover,
-a:focus {
+.button.vocapp:focus {
   color: #fff;
   background-color: #038a64;
   text-decoration: none;
