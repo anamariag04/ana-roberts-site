@@ -130,3 +130,14 @@ a:active { /* selected link */
 .button.vocapp:active {
   color: #038a64;
 }
+
+header {
+  background-color: #faeaf5;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #b2b0b0;
+}
+
+selector {
+  margin: 0 auto;
+}
