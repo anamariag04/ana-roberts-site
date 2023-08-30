@@ -13,7 +13,6 @@ Hyperlink (grey): #393939
 
 body {
   background-color: #fffcfc;
-  font-family: 'Didact Gothic', sans-serif;
   font-family: 'Tajawal', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -23,7 +22,7 @@ body {
 
 header {
   background-color: #faeaf5;
-  padding: 10px;
+  padding: 10px 0;
   margin: 0 auto;
   border-bottom: 3px solid #b2b0b0;
   text-align: center;
@@ -155,7 +154,16 @@ a:active { /* selected link */
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+}
+
+.work .row { 
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a; 
+}
+
+.work .row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .logo {
@@ -204,13 +212,9 @@ nav > ul > li > a:active {
 #hero {
   background-color: #f9f1f7;
   padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-  height: 50%; 
-	box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)  ; 
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)  ; 
 	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)  ; 
 	-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)  ;
-  position: relative;
 }
 
 #hero h1 {
@@ -222,11 +226,6 @@ main {
   padding-top: 133px;
 }
 
-
-
-
-
-
 #about h1 {
   text-align: center;
 }
@@ -235,4 +234,24 @@ main {
   max-width: 500px;
   height: fit-content;
   align-content: center;
+}
+
+.social ul {
+padding: 0;
+list-style-type: none;
+display: flex;
+justify-content: center;
+}
+
+.social svg {
+  width: 50px;
+}
+
+.social svg path {
+  fill: #ee3897;
+}
+
+footer {
+  text-align: center;
+  background-color: #f1b4e2;
 }
