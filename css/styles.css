@@ -30,9 +30,14 @@ header {
   width: 100%;
 }
 
+header .container {
+  gap: 20px;
+}
+
 h1 {
   font-size: 2.75em;
   font-weight: 500;
+  margin: 0;
 }
 
 h2 {
@@ -48,6 +53,10 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 500;
+}
+
+ul {
+  margin: 0;
 }
 
 img {
@@ -144,21 +153,22 @@ a:active { /* selected link */
   height: fit-content;
 }
 
-
-
 /* Layout styling */
 
 .container {
   padding: 0 15px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-.work .row { 
-  padding-bottom: 25px; 
-  border-bottom: 1px solid #4a4a4a; 
+.work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 .work .row:last-child {
@@ -199,31 +209,31 @@ nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #EE3897;
+  color: #ee3897;
 }
 
 nav > ul > li > a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 #hero {
   background-color: #f9f1f7;
   padding: 20px 0;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)  ; 
-	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)  ; 
-	-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)  ;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
 }
 
 #hero h1 {
   text-align: center;
-  margin: 0;  
+  margin: 0;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 130px;
 }
 
 #about h1 {
@@ -237,10 +247,10 @@ main {
 }
 
 .social ul {
-padding: 0;
-list-style-type: none;
-display: flex;
-justify-content: center;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 .social svg {
@@ -248,10 +258,110 @@ justify-content: center;
 }
 
 .social svg path {
-  fill: #ee3897;
+  fill: #000;
 }
 
 footer {
   text-align: center;
-  background-color: #f1b4e2;
+  background-color: #faeaf5;
+}
+
+/* Layout styling - all in one */
+
+.all-in-one .welcome {
+  background: linear-gradient(250.17deg, #198bb8 19.55%, #590696 78.09%);
+  padding: 50px 0;
+  color: #fff;
+}
+
+.all-in-one .info-box {
+  background: #00000038;
+  padding: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-in-one .welcome .content_wrapper {
+  gap: 25px;
+}
+
+.all-in-one .welcome .image_wrapper {
+  overflow: hidden;
+}
+
+.all-in-one .welcome img {
+  margin-left: -30px;
+}
+
+.allinone_images {
+  max-width: 600px;
+}
+
+.allinone_icn {
+  width: 70px;
+}
+
+.quick-links {
+  display: flex;
+  overflow: scroll;
+}
+
+.arrows_icn {
+  max-width: 30px;
+}
+
+.all-in-one h2 {
+  margin: 15px 0;
+}
+
+.all-in-one h3 {
+  margin: 15px 0;
+}
+
+.all-in-one h4 {
+  margin: 15px 0;
+}
+
+.all-in-one .container {
+  margin: 15px 0;
+}
+
+.home-prototypes ul {
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.test ul {
+  margin: 0 0 20px;
+}
+
+.user-flow {
+  margin: 30px 0;
+}
+
+.user-flow-visual ul {
+  list-style-type: none;
+  padding: 8px;
+}
+
+.image-prototype {
+  width: 700px;
+}
+
+.visuals-prototype {
+  display: flex;
+  overflow: scroll;
+}
+
+/* Layout styling - about */
+
+.personal-interest ul {
+  padding-bottom: 20px;
+}
+
+.my-profile {
+  max-width: 600px;
 }
