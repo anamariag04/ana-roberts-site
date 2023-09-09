@@ -192,39 +192,39 @@ a:active {
   max-width: 150px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   display: inline-block;
   width: 100%;
 }
 
-nav>ul>li {
+nav > ul > li {
   display: inline-block;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ee3897;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -256,6 +256,7 @@ nav>ul>li>a:active {
 }
 
 #hero picture {
+  display: block;
   line-height: 0;
 }
 
@@ -355,8 +356,12 @@ footer {
   margin: 15px 0;
 }
 
+.all-in-one section {
+  padding: 40px 0;
+}
+
 .all-in-one .container {
-  margin: 15px 0;
+  padding: 25px 0;
 }
 
 .home-prototypes ul {
@@ -398,6 +403,68 @@ footer {
   padding-bottom: 20px;
 }
 
+/* CSS Animation */
+
+.css-animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -417,7 +484,7 @@ Medium devices (640px and larger)
     width: 100%;
   }
 
-  nav>ul {
+  nav > ul {
     width: auto;
     margin-top: 4px;
   }
@@ -461,6 +528,7 @@ Medium devices (640px and larger)
     margin: 0;
     margin-bottom: 8px;
     border-bottom: none;
+    align-items: flex-start;
   }
 
   .work_content-wrapper {
@@ -587,6 +655,10 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .container {
+    margin: 0 auto;
+  }
 
   #hero .row {
     display: flex;
@@ -902,6 +974,14 @@ Large devices (1024px or larger)
     margin: 0 0 28px;
   }
 
+  .languages h3 {
+    margin: 0 0 28px;
+  }
+
+  .personal-interest h3 {
+    margin: 0 0 28px;
+  }
+
   .skills_wrapper {
     flex-direction: column;
   }
@@ -910,100 +990,19 @@ Large devices (1024px or larger)
   .tools,
   .personal-interest,
   .skills {
-    background-color: #f3f3f3;
+    background-color: #faeaf5;
     margin: 25px;
     padding: 15px;
-  }
-
-  /* CSS Animation */
-
-  .css-animation {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-
-    50% {
-      fill: #fcffad;
-    }
-
-    100% {
-      fill: #f76414;
-    }
-  }
-
-  .sun {
-    animation: 4s color-change infinite alternate linear;
-  }
-
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-  .cloud-back {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
-  @keyframes sun-scale {
-    0% {
-      transform: scale(1.3);
-    }
-
-    50% {
-      transform: scale(2);
-    }
-
-    100% {
-      transform: scale(1.3);
-    }
-  }
-
-  .sun {
-    animation: sun-scale 4s infinite;
-    transition: all 0.2s ease-out;
   }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
-================================= 
+=================================
 @media only screen and (min-width: 1440px) {} */
 
 /* ==============================
 Extra-large devices (1920px or larger)
-================================= 
+=================================
 @media only screen and (min-width: 1920px) {
-} */
+}*/
