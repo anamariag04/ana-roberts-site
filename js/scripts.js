@@ -1,1 +1,8 @@
-console.log("Welcome to my portfolio! I hope you enjoy learning about me and the work I do.");
+function menuToggle() {
+    var x = document.getElementById('myNavtoggle');
+    if (x.className === 'navtoggle') {
+      x.className += ' responsive';
+    } else {
+      x.className = 'navtoggle';
+    }
+  }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana Roberts UX/UI UK Site</title>
+    <script src="https://kit.fontawesome.com/c49dafcc94.js" crossorigin="anonymous"></script>
     <link href="img/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -19,14 +20,17 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html"><img src="img/icn/ana-logo.svg" alt="logo Ana Roberts" class="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
+                <a href="index.html"><img src="img/icn/ana-logo.svg" alt="logo Ana Roberts" class="logo"></a>
+            <div class="navtoggle" id="myNavtoggle">
+                <nav>
+                    <ul>
+                        <li><a href="index.html#projects" onclick="menuToggle()">Projects</a></li>
+                        <li><a href="about.html" onclick="menuToggle()">About</a></li>
+                        <li><a href="index.html#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -1772,6 +1776,10 @@
             </div>
         </div>
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
