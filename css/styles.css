@@ -31,7 +31,7 @@ header {
 
 header .container {
   display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -197,6 +197,10 @@ a:active {
   max-width: 150px;
 }
 
+nav {
+  display: flex;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -215,7 +219,7 @@ nav > ul {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 20px;
+  top: -44px;
   font-size: 20px;
 }
 
