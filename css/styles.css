@@ -98,6 +98,7 @@ a:active {
   padding: 13px;
   border-radius: 18px;
   transition: 0.2s opacity;
+  text-align: center;
 }
 
 .button:visited {
