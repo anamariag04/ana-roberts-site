@@ -31,8 +31,8 @@ header {
 
 header .container {
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo {
@@ -71,6 +71,7 @@ img {
 a {
   color: #393939;
   text-decoration: none;
+
   /* No underlining */
 }
 
@@ -180,6 +181,7 @@ a:active {
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -212,7 +214,8 @@ nav > ul {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -223,20 +226,21 @@ nav > ul {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -704,7 +708,6 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .container {
     margin: 0 auto;
   }
@@ -1054,4 +1057,4 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 =================================
 @media only screen and (min-width: 1920px) {
-}*/
+} */
