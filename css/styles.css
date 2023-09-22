@@ -157,13 +157,38 @@ a:active {
 .button.vocapp:hover,
 .button.vocapp:focus {
   color: #fff;
-  background-color: #038a64;
+  background-color: #ee3897;
   text-decoration: none;
   opacity: 0.8;
 }
 
 .button.vocapp:active {
-  color: #038a64;
+  color: #ddd;
+}
+
+.button.portfolio {
+  background-color: #ee3897;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.5s opacity;
+}
+
+.button.portfolio:visited {
+  background-color: #ee3897;
+  color: #fff;
+}
+
+.button.portfolio:hover,
+.button.portfolio:focus {
+  color: #fff;
+  background-color: #797979;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.button.all-in-one:active {
+  color: #797979;
 }
 
 .footer-icon {
